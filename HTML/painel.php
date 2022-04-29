@@ -1,5 +1,6 @@
 <?php
 session_start();
+//verifica se há algum usuario logado
 include('verifica_login.php');
 ?>
 
