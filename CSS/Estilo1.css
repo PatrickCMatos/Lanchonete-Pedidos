@@ -1,0 +1,340 @@
+	
+* { margin: 0; padding: 0; }
+
+body{
+background-color:white;
+
+
+    
+}
+.titleall{
+   position: fixed;
+    width: 100%;
+    margin-top: 0px;
+
+}
+.titlep{
+    
+    color: white;
+    width: 100%;
+    background-color: #fba36c;
+}
+.titletext{
+
+}
+.titleimgp{
+    width: 35px;
+    height: 35px;
+}
+.title{
+    font-size: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ff6100;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    z-index: auto;
+   /*MENU */
+   
+}
+.titleimg{
+    width: 20%;
+    height: 20%;
+    
+}
+
+.title ul{
+   margin-top: 15px;
+      list-style: none;
+    float:right;
+     text-align: right;
+}
+.title ul li{
+    display: inline-block;
+    
+     
+}
+.title ul li a{
+    
+ color: white;
+  text-shadow: 2px 2px 4px #000000;
+    text-decoration:none;
+    padding: 15px;
+   /* transition: .9s ease;
+    -webkit-transition: .9s ease; */
+    display: block;
+
+}
+.title ul li a:hover{
+    background-color: #c74f05;	
+    color: white;
+}
+
+.title li  ul{
+position:absolute; 
+background-color: darkgray; 
+display:none;
+}   
+.title li:hover ul{display:block;}
+	
+.title li ul li{
+border:1px solid #000; 
+display:block; 
+width:150px;
+}
+
+.redesocial
+{
+    height: 50px;
+    width: 50px;
+    float:right;
+}
+
+.menu{
+    margin-left: auto;
+    margin-right: auto;
+   width: 1100px;
+   height: 50px;
+   background-color: #efefef;  
+}
+/*FORMATAR MENU*/
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    display: inline-block;
+     
+}
+/*formatar link do menu*/
+.menu ul li a{
+    color:#000;
+    text-decoration:none;
+    padding: 15px;
+   /* transition: .9s ease;
+    -webkit-transition: .9s ease; */
+    display: block;
+	
+}
+/*cor de fundo ao passar o mouse no menu*/
+.menu ul li a:hover{
+    background-color: #3e3d3d;	
+    color: white;
+}
+.menu li  ul{
+position:absolute; 
+background-color: darkgray; 
+display:none;
+}   
+.menu li:hover ul{display:block;}
+	
+.menu li ul li{
+border:1px solid #000; 
+display:block; 
+width:150px;
+}
+
+
+/*ESPAÇO */
+.principal{
+	/*background-color: rgba(15,16,26,0.5); */
+    background-color: white;
+	margin: auto auto;
+	width: 100%;
+    height: 1200px;
+}
+.esquerdadireita
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 300px;
+
+}
+.esquerda{
+    background-color:#efefef;
+    width: 585px;
+    height: 300px;
+    float:left;
+    text-align: justify;
+}
+.direita{
+    margin-right: auto;
+	background-color: #efefef;
+    width: 585px;
+    height: 300px;
+    float:right;
+    text-align: justify;
+}
+.tituloed{
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    width: 585px;
+    height: 30px;
+}
+.imged
+{
+    
+    width: 225px;
+    height: 270px;
+}
+.textoed{
+    font-size: 20px;
+}
+.footerall
+{
+    color: white;
+    vertical-align: middle;
+    height: 125px;
+    width: 100%;
+}
+.footerprin{
+    font-size: 17px;
+    text-align: right;
+    vertical-align: middle;
+    height: 75px;
+    widows: 100%;
+    background-color: #fba36c;
+    
+}
+.textfooterp{
+        margin-top: 5px;
+    margin-right: 150px;
+    
+    
+}
+.footer
+{
+    background-color: #ff6100;
+    text-align: center;
+    height: 50px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.slider {
+    display: block;
+    height: 345px;
+    width: 828px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+.slider li {
+    list-style: none;
+    position: absolute; 
+}
+
+.slider img { 
+    margin: auto;        
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+    opacity: 0;
+    visibility: hidden;
+ } 
+.slider input {
+    display: none;
+}
+
+.slider label {
+     background-color: #FFF;
+     bottom: 10px;
+     cursor: pointer;
+    display: block;
+     height: 10px;
+     position: absolute;
+     width: 10px;
+     z-index: 10;
+ }
+
+ .slider li:nth-child(1) label {
+     left: 10px;
+ }
+
+ .slider li:nth-child(2) label {
+     left: 40px;
+ }
+
+ .slider li:nth-child(3) label {
+    left: 70px;
+ } 
+
+.slider img {
+     opacity: 0;
+    visibility: hidden;
+ }
+
+ .slider li input:checked ~ img {
+     opacity: 1;
+     visibility: visible;
+     z-index: 10;
+ } 
+.redessociais
+{
+    width: 100px;
+    height: 100px;
+    position:fixed;
+    right: 0px;
+    bottom: 100px;
+   width: 35px;
+   z-index: 100;
+}
+.titulotodo{
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    width: 1200px;
+    height: 30px;
+    
+}
+.titulotodop{
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    width: 1100px;
+    height: 30px;
+    
+}
+.imgthumbesq{
+    margin: 4%;
+    height: 214px;
+    width: 370px;
+    float:left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.imgthumbdir{
+    margin: 4%;
+    height: 214px;
+    width: 370px;
+    float:right;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.thumbesq{
+    text-align: left;
+    text-shadow: 2px 2px #fbcd8b;
+
+}
+.textoesq{
+    float: left;
+    font-size: 20px;
+    margin-top: 100px;
+    text-shadow: 2px 2px #fbcd8b;
+}
+.thumbdir{
+    text-align:right;
+    text-shadow: 2px 2px #fbcd8b;
+
+}
+.textodir{
+    float: right;
+    font-size: 20px;
+}
+.imgprincipal{
+    width: 100%;
+    height: 50%;
+}
+
