@@ -1,5 +1,11 @@
 <?php
+ini_set('display_errors', 0 );
+error_reporting(0);
 session_start();
+$sesaoiniciada=$_SESSION['email'];
+if($sesaoiniciada){
+    header('Location: painel.php');
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,8 +22,7 @@ session_start();
 <body id="body">
 
     <div class="titleall">
-        <!--<div class="titlep">&nbsp;&nbsp;&nbsp;&nbsp;<img class="titleimgp" src="..\IMAGENS\126341.png">&nbsp; <b>+55 (33) 9 9XXX-XXX5</b></div>
--->
+    
 
         <div class="title"> <a href="index.php"> <img class="titleimg" src="..\IMAGENS\logo3.png"> </a>
             <ul>
@@ -27,39 +32,12 @@ session_start();
                 <li><a href="cadastro.php">Cadastrar</a></li>
                 <li><a href="contato.php">Contato</a></li>
             </ul>
-            <!--<nav  class="menu" >
- <ul>
-                    <li><a href="..\html\inicio.php">Inicio</a></li>
-                    <li><a href="..\html\nosso_trabalho.php" target="_blank">Nosso trabalho</a></li>
-                    <li><a href="#quemsomosnos">Quem somos</a></li>
-                </ul>
-            </nav> -->
+      
         </div>
     </div>
     <br>
 
-    <!-- <ul class="slider">
-        <li>
-            <input type="radio" id="slide1" name="slide" checked>
-            <label for="slide1"></label>
-            <img href="..\html\inicio.php" src="..\IMAGENS\imagem11.png" />
-        </li>
-        <li>
-            <input type="radio" id="slide2" name="slide" checked>
-            <label for="slide2"></label>            
-            <img href="..\html\inicio.php" src="..\IMAGENS\imagem12.png" />
-        </li>
-        <li>
-            <input type="radio" id="slide3" name="slide" checked>
-            <label for="slide3"></label>            
-            <img href="..\html\inicio.php" src="..\IMAGENS\imagem13.png" />
-        </li>
- </ul> -->
-
-
-
-    <!--  <img class="imgprincipal" src="..\IMAGENS\imagem14.png">
--->
+  
 
     <br> <br> <br> <br>
     <br>
@@ -120,16 +98,12 @@ session_start();
     <div class="redessociais"> <a target="_blank" href="https://www.facebook.com/patrick.caminhasm"><img class="redesocial" src="..\IMAGENS\facebook.png"></a>
         <a target="_blank" href="https://wa.me/seunumerodetelefone?text=sua%20mensagem"><img class="redesocial" src="..\IMAGENS\whatsapp.png"></a>
     </div>
-    <!-- <div class="footerall">
-            <div class="footerprin">
-            <b class="textfooterp">E-mail: patrickcaminhasm@gmail.com</b><br>
-            <b class="textfooterp">Telefone: +55 (33) 9 9XXX-XXX5</b>
-            </div>-->
+   
     <div class="footer">
-        <a>Website produzido por <a target="_blank" style="color:white" href="https://patrick-matos.000webhostapp.com">Patrick Caminhas</a>.</a><br>
+        <a>Website produzido por <a target="_blank" style="color:white" href="https://www.linkedin.com/in/patrick-caminhas/">">Patrick Caminhas</a>.</a><br>
         <b>© 2020 Todos os direitos reservados.</b>
     </div>
-    <!--</div>-->
+   
 </body>
 
 </html>

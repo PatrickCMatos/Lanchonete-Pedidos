@@ -6,6 +6,8 @@ $password = "";
 $dbname = "gerenciadorlanchonete";
 
 $conexao = mysqli_connect('localhost','root',"","gerenciadorlanchonete") or die('Não foi possivel conectar');
-echo "loguei"
+echo "loguei";
+
+$mysqli = new mysqli($host,$user,$password,$dbname);
 
 ?>

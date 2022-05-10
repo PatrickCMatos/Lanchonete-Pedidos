@@ -17,11 +17,10 @@ session_start();
                 
            <div class="title"> <img class="titleimg" src="..\IMAGENS\logo3.png"> 
             <ul>
-                <li><a href="index.php">Inicio</a></li>
-                <li><a href="cardapio.php">Cardapio</a></li>
-                <li><a href="login.php">Login</a></li>
-                <li><a href="cadastro.php">Cadastrar</a></li>
-                <li><a href="contato.php">Contato</a></li>
+                <li><a href="painel.php">Painel</a></li>
+                <li><a href="cardapio_logado.php">Cardapio</a></li>
+                <li><a href="novo_pedido.php">Novo Pedido</a></li>
+                <li><a href="contato_logado.php">Contato</a></li>
         </ul>
  
         </div> </div>
@@ -63,7 +62,7 @@ session_start();
         </div>
       
             <div class="footercontato">
-                <a>Website produzido por <a target="_blank" href="https://www.linkedin.com/in/patrick-caminhas/">Patrick Caminhas</a>.</a><br>
+                <a>Website produzido por <a target="_blank" href="https://www.linkedin.com/in/patrick-caminhas/">">Patrick Caminhas</a>.</a><br>
             <b>© 2020 Todos os direitos reservados.</b>
         </div>
     </body>
