@@ -55,7 +55,7 @@ for( $i=1; $i<=6; $i++){
 }
 
 //modo de conexão com banco de dados é o mysqli, os atributos para conexão são o host, usuario, senha e BD
-$connect = mysqli_connect('localhost','root',"","lanchonetegerencia");
+$connect = mysqli_connect('localhost','root',"","gerenciadorlanchonete");
 
 //se não conectar, mata o script e exibe o erro
 if (!$connect) {
@@ -65,7 +65,7 @@ if (!$connect) {
 
 echo "Connected successfully";
 
-echo "$email - $endereco - $itens - $total - $observacao - $pagamento - $data - $hora";
+echo " -  $email - $endereco - $itens - $total - $observacao - $pagamento - $data - $hora";
       //Querry para inserção dos dados no banco de dados
     $query = "INSERT INTO pedido (email,endereco,itens,total,observacao,metodo_pagamento,data,hora) VALUES ('$email','$endereco','$itens','$total','$observacao','$pagamento','$data','$hora')";
 
@@ -75,5 +75,5 @@ echo "$email - $endereco - $itens - $total - $observacao - $pagamento - $data - 
     if($insert)
     {
 
-      echo"<script language='javascript' type='text/javascript'>alert('Pedido cadastrado com sucesso!');window.location.href='cardapio_logado.php'</script>";
+      echo"<script language='javascript' type='text/javascript'>alert('Pedido cadastrado com sucesso!');window.location.href='painel.php'</script>";
   }

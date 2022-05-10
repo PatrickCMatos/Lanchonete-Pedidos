@@ -7,14 +7,15 @@ $email=$_SESSION['email'];
 
 echo " a ".$email;
 $consulta = "SELECT * FROM cliente WHERE email= '$email' ";
+$consultapedidos = "SELECT * FROM pedido WHERE email= '$email' ";
 
 $con = $mysqli->query($consulta) or die ($mysqli->error);
+$conped = $mysqli->query($consultapedidos) or die ($mysqli->error);
+
 $dado  = $con->fetch_array();
+
 ?>
 
-<h2>Ola, <?php echo $dado["id"]; ?> </h2>
-
-<h2><a href="logout.php">SAIR </a></h2>
 
 <!DOCTYPE html>
 <html>
@@ -49,17 +50,42 @@ $dado  = $con->fetch_array();
 
     <br> <br> <br> <br>
     <br>
+
+    
     <div class="caixasobre">
-        <div class="titulocaixa">&nbsp;Promoção do dia</div>
+    <h2>Ola, <?php echo $dado["nome"]; ?> </h2>
+
+<h2><a href="logout.php">SAIR </a></h2>
+        <div class="titulocaixa">&nbsp;Seus Pedidos</div>
         <br>
-        <img class="imgsobre" src="..\IMAGENS\xtudo.jpg">
         <div class="textocaixa">
 
-            <p>X-Tudo</p>
-            <p>De: R$21,50</p>
-            <p>Por: R$16,00</p>
-            <p>Ingrediente: Pão de hamburger, bife bovino, bacon, queijo, presunto, ovo, milho verde, batata palha e
-                molho.</p>
+        <table border="1"> 
+            <tr>
+                <td>DATA</td>
+                <td>HORA</td>
+                <td>ITENS</td>
+                <td>TOTAL</td>
+                <td>OBSERVAÇÃO</td>
+                <td>ENDEREÇO</td>
+                <td>METODO DE PAGAMENTO</td>
+            </tr>
+            <?php 
+            while($dadoped  = $conped->fetch_array()) {
+            ?>
+            <tr>
+                <td><?php echo $dadoped["data"]; ?></td>
+                <td><?php echo $dadoped["hora"]; ?></td>
+                <td><?php echo $dadoped["itens"]; ?></td>
+                <td><?php echo $dadoped["total"]; ?></td>
+                <td><?php echo $dadoped["observacao"]; ?></td>
+                <td><?php echo $dadoped["endereco"]; ?></td>
+                <td><?php echo $dadoped["metodo_pagamento"]; ?></td>
+            </tr>
+            <?php 
+            }
+            ?>
+        </table>
 
         </div>
     </div>
@@ -69,7 +95,7 @@ $dado  = $con->fetch_array();
         <a target="_blank" href="https://wa.me/seunumerodetelefone?text=sua%20mensagem"><img class="redesocial" src="..\IMAGENS\whatsapp.png"></a>
     </div>
    
-    <div class="footer">
+    <div class="footercontato">
         <a>Website produzido por <a target="_blank" style="color:white" href="https://www.linkedin.com/in/patrick-caminhas/">Patrick Caminhas</a>.</a><br>
         <b>© 2020 Todos os direitos reservados.</b>
     </div>
